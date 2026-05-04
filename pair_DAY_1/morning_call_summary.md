@@ -1,7 +1,3 @@
-﻿# Morning call summary (3–5 sentences)
+﻿# Morning call summary
 
-Either partner drafts; the other confirms.
-
-- What was ambiguous in each draft question?
-- How was each question sharpened?
-- Confirm both questions are final for the day.
+In the morning call, Birkity Yishak and I both started with broad drafts that mixed several inference-time topics together. We sharpened by forcing each question to name one mechanism, one artifact anchor, and one outcome that should change after the explainer. Birkity’s final question was narrowed to decode-time instruction drift in multi-turn loops, specifically the role of attention routing, attention sinks, KV-cache reuse, and prefix caching in preserving (or eroding) rule fidelity. My question was narrowed to commitment-safety behavior under weak evidence in my Week 11 evaluator artifacts. We confirmed both final questions were unambiguous and committed for Day 1 research.

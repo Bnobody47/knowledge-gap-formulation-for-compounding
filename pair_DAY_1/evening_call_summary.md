@@ -1,6 +1,3 @@
-﻿# Evening call summary (3–5 sentences)
+﻿# Evening call summary
 
-Either partner drafts; the other confirms.
-
-- What feedback did each asker give?
-- What did each writer revise?
+During the evening call, Birkity said the first draft explained drift conceptually but needed a clearer token-level mechanism and a sharper distinction between “token present” and “token influential.” I revised the explainer to make decode-time query-key competition the load-bearing mechanism, added explicit sections on attention sinks vs semantic control, and clarified that KV cache is availability-preserving, not authority-preserving. Birkity also asked for more practical engineering guidance, so I added concrete production controls (stateless reconstruction, policy/trajectory separation, re-anchoring, rule-recall pass, and external validators). We also tightened the public thread so each post stands alone without needing the blog. Final revised version was confirmed in call.
