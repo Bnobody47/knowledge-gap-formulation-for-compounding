@@ -8,7 +8,7 @@ Add your live URLs here for submission (also referenced in `portfolio_update.md`
 
 | Day | Blog URL | Thread URL |
 |-----|----------|------------|
-| 1 |  |  |
+| 1 | [DEV — Why front-loaded rules drift…](https://dev.to/bnobody47/why-front-loaded-rules-drift-in-long-evaluator-and-agent-loops-1j3p) | [X thread (post 1/6)](https://x.com/a_beamlak/status/2051386313153077272) — full chain: `pair_DAY_1/thread.md` |
 | 2 |  |  |
 | 3 |  |  |
 | 4 |  |  |
