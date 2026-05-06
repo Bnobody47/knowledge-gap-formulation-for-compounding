@@ -64,6 +64,21 @@ Result: rule text remains in-window, but next-token generation is increasingly c
 6. **Use post-hoc validators.** Keep deterministic checks (like overcommitment guardrails) outside model reasoning to enforce hard boundaries.
 7. **Measure drift explicitly.** Track per-turn instruction adherence and variance, not only final pass/fail.
 
+## Beyond prompt engineering: system-level controls
+
+Prompt quality helps, but evaluator reliability improves most when you change the system architecture. A concise control stack for this exact failure mode:
+
+1. **Fresh evaluator calls (stateless).** Judge each case independently with canonical rubric + current evidence, so previous weak judgments cannot contaminate future ones.
+2. **Immutable policy block + dynamic state block.** Keep scoring rules fixed; only conversation/task evidence is summarized or compacted.
+3. **Retrieval-based rule injection.** Pull only the most relevant rubric clauses near the decision point (e.g., overcommitment + unsupported timeline rules for weak-signal cases).
+4. **External validators and guardrails.** Add deterministic checks for unsafe phrasing (`immediately`, `guarantee`, `we can deploy this week` under weak evidence) and force revision on fail.
+5. **Multi-pass evaluation.** Decompose into: signal strength -> commitment strength -> mismatch check -> final penalty/reward -> recommended safer behavior.
+6. **Programmatic scoring for critical rules.** Let code enforce hard penalties (`weak signal` + `hard commitment` => overcommitment flag), while LLM handles extraction/explanation.
+7. **Specialized narrow judges.** Use separate detectors (overcommitment, uncertainty handling, handoff quality) instead of one broad evaluator.
+8. **Calibration with gold references.** Periodically test known cases; if drift appears, re-anchor/reset prompt state.
+9. **Context hygiene and memory control.** Keep rules/current evidence; drop noisy history. For advanced stacks, pin policy tokens and evict low-value cache entries.
+10. **Advanced levers (when self-hosting).** Attention steering, KV-cache policies, evaluator fine-tuning, and verifiable reward training can make rule adherence less dependent on fragile long-context attention.
+
 ## Scope discipline
 
 This explainer focuses on decode-time influence drift in transformer attention and production controls for evaluator/agent loops. I did **not** cover full training-time interventions (e.g., long-horizon RL policy shaping) in depth; those are follow-on work once inference-time controls are in place.
