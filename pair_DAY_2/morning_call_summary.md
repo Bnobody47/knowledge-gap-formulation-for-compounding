@@ -1,7 +1,3 @@
-﻿# Morning call summary (3–5 sentences)
+# Morning call summary
 
-Either partner drafts; the other confirms.
-
-- What was ambiguous in each draft question?
-- How was each question sharpened?
-- Confirm both questions are final for the day.
+In the morning call, Melaku Yilma and I noticed my first draft was too broad and read like a full system-design survey (too many guardrails, too many dimensions, and unclear mechanism boundary). We sharpened it by centering one core mechanism: the decision boundary between continued reasoning and tool invocation in a multi-tool loop. We narrowed the intervention scope to two guardrail families (`schema constraints` vs `stop conditions`) and set explicit outcomes (tool hallucination/bad tool-call rate and latency). I also kept it generally reusable across projects while anchoring the measurement setup to a tau2-bench-style workflow so the question stays testable. Both final questions were confirmed and committed.
