@@ -1,7 +1,3 @@
-﻿# Morning call summary (3–5 sentences)
+﻿# Morning call summary
 
-Either partner drafts; the other confirms.
-
-- What was ambiguous in each draft question?
-- How was each question sharpened?
-- Confirm both questions are final for the day.
+In the morning call, Yakob Dereje and I sharpened his question from a broad “how LoRA works” prompt into a specific mechanism gap: token-level cross-entropy meaning, LoRA gradient flow into `A/B` under frozen `W0`, and whether gains represent style learning vs memorization under high augmentation concentration. We made the question diagnostic by naming exact target modules (`q/k/v/o`, `gate/up/down`) and a concrete data limitation (94.3% augmentations of 128 originals). We also defined what would count as a satisfying answer: a gradient-level walkthrough plus at least one runnable diagnostic for generalization vs memorization. Both final questions were confirmed and committed.

@@ -1,6 +1,5 @@
-﻿# Evening call summary (3–5 sentences)
+﻿# Evening call summary
 
-Either partner drafts; the other confirms.
+In the evening call, Yakob said the draft answered the training mechanics clearly but needed tighter separation between “real metric gain” and “generalization claim.” I revised the explainer to center that distinction explicitly and to state cross-entropy’s objective in plain token-level terms before moving to LoRA gradient flow. Yakob also requested stronger practicality, so I added two concrete diagnostics (grouped holdout by original-family and module-level LoRA gradient norms) as the minimum evidence needed to defend style learning. We tightened the thread so each post stands alone and carries the same core message. Final revised version was confirmed in call.
 
-- What feedback did each asker give?
-- What did each writer revise?
+Yakob also explained that objective choice in post-training can shift token policy in ways that look like improved caution while actually rewarding evaluator-friendly surface phrases. He emphasized checking whether evidence-linked tokens rise more than style-marker tokens across strong-signal vs weak-signal probes, so we do not confuse true reasoning improvement with evaluator gaming. I incorporated this as a review lens in the final explainer and preserved scope by keeping the Day 3 core answer centered on SFT + LoRA mechanics.
