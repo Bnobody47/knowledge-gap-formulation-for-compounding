@@ -11,7 +11,7 @@ Add your live URLs here for submission (also referenced in `portfolio_update.md`
 | 1 | [DEV - Why front-loaded rules drift...](https://dev.to/bnobody47/why-front-loaded-rules-drift-in-long-evaluator-and-agent-loops-1j3p) | [X thread (post 1/6)](https://x.com/a_beamlak/status/2051386313153077272) - full chain: `pair_DAY_1/thread.md` |
 | 2 | [DEV - Why DeepSeek V3.2 tool calls drift...](https://dev.to/bnobody47/why-deepseek-v32-tool-calls-can-drift-from-ordered-system-instructions-1gb) | [X thread (post 1/6)](https://x.com/a_beamlak/status/2052094708109754798) - full chain: `pair_DAY_2/thread.md` |
 | 3 | [DEV - Did my LoRA learn Tenacious style...](https://dev.to/bnobody47/did-my-lora-learn-tenacious-style-or-just-memorize-augmented-patterns-3fi6) | [X thread (post 1/6)](https://x.com/a_beamlak/status/2052458185902927905) - full chain: `pair_DAY_3/thread.md` |
-| 4 |  |  |
+| 4 | [DEV - Why your non-significant benchmark result might be a power problem...](https://dev.to/bnobody47/why-your-non-significant-benchmark-result-might-be-a-power-problem-not-a-model-problem-5god) | [X thread (post 1/6)](https://x.com/a_beamlak/status/2052817001769259362) - full chain: `pair_DAY_4/thread.md` |
 | 5 |  |  |
 
 ## Repo layout

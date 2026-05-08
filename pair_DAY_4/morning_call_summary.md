@@ -1,7 +1,3 @@
-﻿# Morning call summary (3–5 sentences)
+﻿# Morning call summary
 
-Either partner drafts; the other confirms.
-
-- What was ambiguous in each draft question?
-- How was each question sharpened?
-- Confirm both questions are final for the day.
+In the morning call, I asked my Day 4 question about whether my Week 11 benchmark result (`p = 0.71`) reflects no effect or low power, and how many tasks v0.2 needs to detect small real gains (+3/+5/+8 points) at 80% power. Kemeriya Major asked, in short, how to correctly interpret and report evaluation significance in the same benchmark context, including CI width and finite-bootstrap p-value reporting (`p = 0.0` issue). We both sharpened our drafts to be explicit about artifact pointers (`submission_report.md`), measurable outputs (MDE and task-count targets), and reporting corrections. Both final questions were confirmed and committed for Day 4 research.
